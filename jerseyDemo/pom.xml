@@ -13,9 +13,17 @@
 		<junit.version>4.12</junit.version>
 		<commons.logging.version>1.2</commons.logging.version>
 		<spring.web.version>4.3.5.RELEASE</spring.web.version>
+		<junit.jupiter.version>5.0.0-M2</junit.jupiter.version>
+		<junit.platform.version>1.0.0-M2</junit.platform.version>
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.9.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
@@ -49,18 +57,21 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
 		<dependency>
 			<groupId>org.mockito</groupId>
-			<artifactId>mockito-junit-jupiter</artifactId>
-			<version>2.23.4</version>
+			<artifactId>mockito-core</artifactId>
+			<version>2.23.0</version>
+			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>
